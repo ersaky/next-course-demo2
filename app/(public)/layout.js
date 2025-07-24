@@ -22,10 +22,6 @@ export const metadata = {
 };
 
 export default function PublicLayout({ children }) {
-  const x = false;
-  if (!x) {
-    throw new Error("xxxxx sayfasında hata !");
-  }
   return (
     <html lang="en">
       <body
