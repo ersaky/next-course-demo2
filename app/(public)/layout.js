@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
 import Header from "./components/ui/header";
 import Footer from "./components/ui/footer";
+import ThemeProvider from "@/providers/theme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +28,13 @@ export default function PublicLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="font-sans grid grid-rows-[120px_1fr_20px] justify-items-center min-h-screen">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <div className="font-sans grid grid-rows-[120px_1fr_20px] justify-items-center min-h-screen">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import ThemeProvider from "@/providers/theme";
 export const metadata = {
   title: {
     template: "%s - BTK Akademi",
@@ -19,13 +20,15 @@ export default function DashboardLayout({
     return <div>{login}</div>;
   }
   return (
-    <div className="font-sans">
-      {children}
-      <div className="grid grid-cols-3 gap-4 max-w-7xl w-full px-4 py-10">
-        {users}
-        {revenue}
-        {notifications}
+    <ThemeProvider>
+      <div className="font-sans">
+        {children}
+        <div className="grid grid-cols-3 gap-4 max-w-7xl w-full px-4 py-10">
+          {users}
+          {revenue}
+          {notifications}
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }

@@ -1,15 +1,15 @@
 const comments = [
   {
     id: 1,
-    text: "İlk yorum",
+    text: "ilk yorum",
   },
   {
     id: 2,
-    text: "İkinci yorum",
+    text: "ikinci yorum",
   },
   {
     id: 3,
-    text: "Üçüncü yorum",
+    text: "üçüncü yorum",
   },
 ];
 
