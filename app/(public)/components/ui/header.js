@@ -34,6 +34,11 @@ const navLinks = [
     name: "Users-Client",
     url: "/users-client",
   },
+  {
+    id: 7,
+    name: "Users-Server",
+    url: "/users-server",
+  },
 ];
 export default function Header() {
   const path = usePathname();
