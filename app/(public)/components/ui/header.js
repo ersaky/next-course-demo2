@@ -29,6 +29,11 @@ const navLinks = [
     name: "İletişim",
     url: "/iletisim",
   },
+  {
+    id: 6,
+    name: "Users-Client",
+    url: "/users-client",
+  },
 ];
 export default function Header() {
   const path = usePathname();
